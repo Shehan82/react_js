@@ -8,8 +8,9 @@ class Counter extends Component {
         
     };
 
-    handleCount = () => {
+    handleCount = (product) => {
         this.setState({count: this.state.count + 1})
+        console.log(product);
     }
     
     render() { 
@@ -28,8 +29,7 @@ class Counter extends Component {
         return (
             <React.Fragment>
                 <span className="badge badge-warning m-2">{this.formatCount()}</span>
-                <button type="button" onClick={this.handleCount} className={classes}>Increment</button>
-                
+                <button type="button" onClick={() => this.handleCount("hello")} className={classes}>Increment</button>
             </React.Fragment> 
             
         );
