@@ -2,15 +2,18 @@ import React, { Component } from 'react';
 import Counter from './counter';
 
 class Counters extends Component {
-    state = {  }
+    state = { 
+        counterComp : [
+            {id:1},
+            {id:1},
+            {id:1},
+            {id:1},
+        ]
+     }
     render() { 
         return ( 
            <div>
-               <Counter/> <br/>
-               <Counter/> <br/>
-               <Counter/> <br/>
-               <Counter/> <br/>
-               <Counter/>
+              {this.state.counterComp.map(x => <Counter key={x.id}/>)}
            </div>
          );
     }
