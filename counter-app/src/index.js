@@ -4,10 +4,12 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Counters from './components/counters';
+import CountComp from './components/new'
 
 ReactDOM.render(
   <React.StrictMode>
     <Counters />
+    <CountComp/>
   </React.StrictMode>,
   document.getElementById('root')
 );
