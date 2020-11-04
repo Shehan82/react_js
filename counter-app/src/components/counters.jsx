@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Counter from './counter';
+import CountComp from './new'
 
 class Counters extends Component {
     state = { 
@@ -18,6 +19,8 @@ class Counters extends Component {
                     <h4>Hello, #{x.id}</h4>
                 </Counter>
                 ))}
+
+              
 
            </div>
          );
